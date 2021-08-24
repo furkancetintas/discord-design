@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  width: 280px;
+  height: 54px;
+  background: #292b2f;
+  position: relative;
+  margin-top: 350px;
+}
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.box-container > span > i {
+  position: absolute;
+  font-size: 13px;
+  top: 30px;
+  left: 42px;
+  cursor: pointer;
+}
+.box-container ul {
+  display: none;
+  align-items: stretch;
+  flex-direction: column;
+  position: absolute;
+  transform: translateY(-170px);
+  width: 260px;
+  height: 280px;
+  padding: 10px 0px;
+  background: #18191c;
+}
+.box-container ul.active {
+  display: flex;
+}
+.box-container ul li {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+  margin: 0px 10px;
+  padding: 0px 10px;
+  border-bottom: 1px solid #292b2f;
+  cursor: pointer;
+  border-radius: 5px;
+}
+ul li:hover {
+  background: #4752c4;
+}
+ul li:hover i {
+  color: #d8d8d8;
+}
+.box-container ul li a {
+  font-size: 14px;
+  color: #d8d8d8;
+}
+.box-container a i {
+  font-size: 13px;
+  margin-right: 5px;
+}
+.bi-circle-fill {
+  color: #3ba55d;
+}
+.bi-moon-fill {
+  color: #faa81a;
+}
+.bi-dash-circle-fill {
+  color: #c63e40;
+}
+.bi-record-circle-fill {
+  color: #747f8d;
+}
+li:nth-child(3) {
+  height: 70px;
+}
+li:nth-child(3) p {
+  font-size: 12px;
+  margin-left: 22px;
+}
+li:nth-child(4) {
+  height: 90px;
+  margin-bottom: 10px;
+}
+li:nth-child(4) p {
+  font-size: 12px;
+  margin-left: 22px;
+}
+.text {
+  color: #fbfbfb;
+  width: 170px;
+  font-size: 14px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.text p {
+  font-size: 10px;
+  color: #d8d8d8;
+  overflow: hidden;
+  cursor: default;
+}
+.text p::before {
+  content: 'suskunum ve gözler...';
+  position: relative;
+  display: block;
+  bottom: 0px;
+  transition: all ease 300ms;
+}
+.text p:hover::before {
+  bottom: 20px;
+}
+.text p::after {
+  content: '#3818';
+  position: absolute;
+  display: block;
+  bottom: 0px;
+  transition: all ease 300ms;
+  opacity: 0;
+}
+.text p:hover .text p {
+  bottom: 5px;
+}
+
+.text p:hover::after {
+  bottom: 8px;
+  opacity: 1;
+}
+
+.icons {
+  width: 160px;
+}
+.icons a:first-child {
+  margin-left: 10px;
+}
+.icons a {
+  margin-left: 7px;
+}
+.icons a i {
+  color: #dcddde;
+  font-size: 18px;
+}
+
+.scm a {
+  margin: 5px 2px;
+  color: #18191c;
+}
+.info {
+  padding: 40px;
+}
