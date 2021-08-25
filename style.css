@@ -33,8 +33,12 @@ img {
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+  position: relative;
+  transition: opacity ease 300ms;
 }
-
+img:hover {
+  opacity: 0.7;
+}
 .box-container > span > i {
   position: absolute;
   font-size: 13px;
@@ -52,6 +56,7 @@ img {
   height: 280px;
   padding: 10px 0px;
   background: #18191c;
+  transition: transform ease 300ms linear;
 }
 .box-container ul.active {
   display: flex;

@@ -8,8 +8,6 @@ const spanElements = document.querySelectorAll('.deneme');
 const mic = document.getElementById('mic');
 const headphones = document.getElementById('headphones');
 
-const navLink = document.querySelectorAll('.menu-link');
-
 function linkAction() {
   // When we click on each nav__link, we remove the show-menu class
   ulElement.classList.remove('active');
