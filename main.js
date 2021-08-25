@@ -8,6 +8,14 @@ const spanElements = document.querySelectorAll('.deneme');
 const mic = document.getElementById('mic');
 const headphones = document.getElementById('headphones');
 
+const navLink = document.querySelectorAll('.menu-link');
+
+function linkAction() {
+  // When we click on each nav__link, we remove the show-menu class
+  ulElement.classList.remove('active');
+}
+liBtns.forEach((n) => n.addEventListener('click', linkAction));
+
 const durums = [
   '<i class="bi bi-circle-fill"></i>',
   '<i class="bi bi-moon-fill"></i>',
